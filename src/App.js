@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from "./components/banner/Banner";
+
+const footerStyle = {
+    padding: "20px",
+    backgroundColor: "#464046",
+    color: "#A2A1A9"
+};
+
+
+function Footer(){
+    return (
+        <footer style={footerStyle}>
+            Подвал сайта. Здесь будет меню
+            <p>Небольшая информация</p>
+        </footer>
+    );
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        Институт
+          <Banner/>
+          <Footer/>
+      </div>
   );
 }
 
 export default App;
+
